@@ -1,68 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8" />
-        <title>Oficina Codeverse</title>
-        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">  
+        <title>Academia de Heróis</title>
+        <link rel="stylesheet" href="./css/style.css"/>
     </head>
     <body>
         <header>
-            <h1>Oficina Codevers</h1>
-            <p>Increva-se para participar da minha oficina de HTML!</p>
+            <h1>Academia de Heróis</h1>
+            <p>Inscreva-se para participar da próxima missão.</p>
         </header>
-
         <main>
-            <section>
-                <h1>Faça sua insrição!!</h1>
-        <form action="#" method="get">
-            <label for="nome">Nome do Herói:</label>
-            <input id="nome" name="nome" type="text" />
+            <section id="card">
+                <h1>Faça a sua inscrição</h1>
+                 <form action="#" method="post">
+                <label for="nome">Nome do herói:</label>
+                <input type="text" id="nome" name="nome" required>
 
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" />
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="idade">Idade</label>
-            <input id="idade" name="idade" type="number" />
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
 
-            <label for="equipe">Escolha sua equipe:</label>
-            <select id="equipe" name="equipe">
-                <option>Escolha sua equipe</option>
-                <option>Liga Da Justiça</option>
-                <option>X-Men</option>
-                <option>Aves de Rapina</option>
-            </select>
+                <label for="escolha-equipe">Escolha sua equipe</label>
+                  <select id="escolha-equipe" name="escolha-equipe">
+                    <option>Escolha uma equipe</option>
+                    <option>Liga da Justiça</option>
+                    <option>Jovens Titãs</option>
+                    <option>Vingadores</option>
+                  </select>
+                
+        <section id="qual-poder">
+            <h3>Qual poder você prefere?</h3>
+            <label for="Voar">Voar</label>
+            <input id="Voar" name="poder" type="radio">
+            <label for="Supervelocidade">Supervelocidade</label>
+            <input id="Supervelocidade" name="poder" type="radio">
+            <label for="Superforca">Superforça</label>
+            <input id="Superforca" name="poder" type="radio">
+            <label for="NovasMissoes">Quero receber novas missões</label>
+            <input id="NovasMissoes" name="poder" type="radio">
 
-            <p>Qual poder você prefere?</p>
+        </section>
 
-            <label class="opcao">
-                <input type="radio" name="poder" value="raio-x">
-                Raio-X
-                </label>
-            <label class="opcao">
-            <input type="radio" name="poder" value="invisibilidade">
-             Invisibilidade
-            </label>
-
-            <label class="opcao">
-            <input type="radio" name="poder" value="voar">
-            Voar
-            </label>
-
-            <br>
-
-            <label for="descricao">Porque você quer ser um herói?</label>
-            <textarea id="descricao" name="descricao" rows="4"></textarea>
-            <br>
-            <button type="submit">Enviar inscrição</button>
-
-        </form>
-            </section>
-        </main>
-
-        <footer>
+        <label for="obs">Por que você quer ser um herói?</label>
+        <section id="botao">
+          <textarea id="obs" name="obs" rowa="5"></textarea>
+          <button type="submit">Enviar inscrição</button>
+        </section>
+    </section>
+    </main>
+    <footer>
         <p>Página desenvolvida para a prática de formulários HTML.</p>
     </footer>
-
-
     </body>
 </html>
